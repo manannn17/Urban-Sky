@@ -30,10 +30,23 @@ function initializeMap() {
 
 function populateCityDropdown() {
     const select = document.getElementById('city-select');
+    const cityIcons = {
+        'New York': '🗽',
+        'Los Angeles': '🎬',
+        'London': '🎡',
+        'Tokyo': '🗼',
+        'Beijing': '🏯',
+        'Delhi': '🕌',
+        'São Paulo': '⚽',
+        'Sydney': '🦘',
+        'Paris': '🗼',
+        'Dubai': '🏜️'
+    };
+    
     Object.keys(cityData).forEach(city => {
         const option = document.createElement('option');
         option.value = city;
-        option.textContent = city;
+        option.textContent = `${cityIcons[city] || '📍'} ${city}`;
         select.appendChild(option);
     });
 }

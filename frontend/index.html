@@ -13,7 +13,7 @@
     <div id="loading-screen">
         <div class="loading-content">
             <div class="loading-spinner"></div>
-            <p>Analyzing NASA Data...</p>
+            <p>Initializing Satellite Data...</p>
         </div>
     </div>
 
@@ -26,7 +26,7 @@
     <header class="header">
         <div class="header-left">
             <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="NASA Logo" class="nasa-logo">
-            <h1><i class="fas fa-city"></i> Smart City & Air Quality Dashboard</h1>
+            <h1><i class="fas fa-satellite"></i> Earth Observation Hub</h1>
         </div>
         <nav class="nav-menu">
             <a href="#" class="nav-item active">Home</a>
@@ -40,43 +40,50 @@
     <main class="dashboard">
         <aside class="sidebar left-sidebar">
             <div class="glass-card">
-                <h2><i class="fas fa-sliders-h"></i> Control Panel</h2>
+                <h2><i class="fas fa-rocket"></i> Mission Control</h2>
                 
                 <div class="control-group">
-                    <label for="city-select"><i class="fas fa-map-marker-alt"></i> Select City</label>
+                    <label for="city-select"><i class="fas fa-globe-americas"></i> Location Selection</label>
                     <select id="city-select" class="custom-select">
-                        <option value="all">All Cities</option>
+                        <option value="all">🌍 Global View - All Cities</option>
                     </select>
                 </div>
 
                 <div class="control-group">
-                    <label for="year-slider"><i class="fas fa-calendar-alt"></i> Year: <span id="year-value">2024</span></label>
-                    <input type="range" id="year-slider" min="2000" max="2025" value="2024" class="custom-slider">
+                    <label for="year-slider">
+                        <i class="fas fa-history"></i> Temporal Explorer
+                        <span id="year-value" style="float: right; color: #06b6d4; font-weight: 700;">2024</span>
+                    </label>
+                    <input type="range" id="year-slider" min="2020" max="2024" value="2024" class="custom-slider">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #94a3b8; margin-top: 0.5rem;">
+                        <span>2020</span>
+                        <span>2024</span>
+                    </div>
                 </div>
 
                 <div class="control-group">
-                    <label><i class="fas fa-layer-group"></i> Data Layers</label>
+                    <label><i class="fas fa-layer-group"></i> Observation Layers</label>
                     <div class="toggle-group">
                         <label class="toggle-label">
                             <input type="checkbox" id="toggle-aqi" checked>
                             <span class="toggle-slider"></span>
-                            <span class="toggle-text">Air Quality</span>
+                            <span class="toggle-text">💨 Air Quality Index</span>
                         </label>
                         <label class="toggle-label">
                             <input type="checkbox" id="toggle-vegetation" checked>
                             <span class="toggle-slider"></span>
-                            <span class="toggle-text">Vegetation (NDVI)</span>
+                            <span class="toggle-text">🌳 Vegetation Cover</span>
                         </label>
                         <label class="toggle-label">
                             <input type="checkbox" id="toggle-temperature" checked>
                             <span class="toggle-slider"></span>
-                            <span class="toggle-text">Temperature</span>
+                            <span class="toggle-text">🌡️ Temperature Data</span>
                         </label>
                     </div>
                 </div>
 
                 <button id="predict-btn" class="predict-btn">
-                    <i class="fas fa-chart-line"></i> Show Prediction
+                    <i class="fas fa-atom"></i> AI Forecast
                 </button>
             </div>
         </aside>
