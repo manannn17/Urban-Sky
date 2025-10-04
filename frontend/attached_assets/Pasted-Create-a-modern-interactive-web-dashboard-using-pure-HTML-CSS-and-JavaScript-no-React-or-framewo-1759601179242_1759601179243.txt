@@ -1,0 +1,69 @@
+Create a modern, interactive web dashboard using pure HTML, CSS, and JavaScript (no React or frameworks) called “Smart City & Air Quality Dashboard.”
+This dashboard visualizes NASA Earth data such as air quality, temperature, and vegetation (NDVI) for cities around the world.
+The design should feel futuristic, clean, and data-driven, with blue, green, and white color tones, smooth gradients, and responsive layout.
+
+🔹 Page Layout
+Header / Navbar:
+Title: “🌆 Smart City & Air Quality Dashboard”
+NASA logo on the left (small icon)
+Navigation menu with tabs: Home | Map | Analytics | Forecast | About
+Main Dashboard Area (3-column layout):
+Left Sidebar (Controls Panel):
+Dropdown: Select City
+Date Range Slider (2000–2025)
+Checkboxes/Toggles:
+Air Quality Layer
+Vegetation Layer
+Temperature Layer
+Button: “Show Prediction”
+Center Section (Interactive Map):
+World or city map built using Leaflet.js or Mapbox.js
+Colored circles or heatmap for Air Quality Index (AQI)
+Overlay layers for vegetation (NDVI) and temperature
+Tooltip on hover showing:
+City name
+AQI
+Average Temp
+Green cover %
+Right Sidebar (Analytics Panel):
+Interactive charts made with Chart.js or Plotly.js
+Graphs:
+AQI vs Year (line graph)
+Temperature change (bar chart)
+NDVI change (green bar chart)
+Quick stats cards:
+🌳 Green Cover: 48%
+🌡️ Avg Temp: +1.2°C
+💨 AQI: Moderate (72)
+Footer:
+Text: “Powered by NASA Earth Observation Data (MODIS, LANDSAT, TEMPO)”
+Icons for social media or contact
+
+🔹 Design Style
+Use glassmorphism cards with semi-transparent panels and soft shadows.
+Clean UI with modern Poppins or Inter font.
+Map and graphs should animate slightly on hover or filter changes.
+Use CSS gradients (blue-green tones) for background and buttons.
+Add smooth transitions (CSS transition / transform).
+Keep the layout responsive — grid or flexbox for adaptive resizing.
+
+🔹 Extra Features
+Add a loading animation text: “Analyzing NASA Data…” before the map loads.
+Add an alert banner at top if air quality is poor.
+Optional: Simple login modal (“Researcher” or “Citizen” mode).
+Include icons (FontAwesome or similar) for filters and stats.
+
+🔹 Responsive Design
+On mobile:
+Map takes top section
+Filters and analytics collapse below as swipeable cards
+On tablet/desktop:
+Three-column dashboard layout with fixed sidebar widths
+
+Technologies to Use:
+HTML5
+CSS3 (Flexbox / Grid / Animations / Gradients)
+JavaScript (DOM manipulation, Leaflet.js, Chart.js)
+Optional libraries: Leaflet.js, Chart.js, Plotly.js
+
+Goal: A futuristic NASA-style dashboard where users can explore air quality, temperature, and vegetation data by city — all displayed on an interactive, animated map with smooth charts and clean UI.
